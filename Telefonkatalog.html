@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inlämningsuppgift</title>
+    <link rel="stylesheet" href="Telefonkatalog.css" />
+    <script
+      src="https://kit.fontawesome.com/163dda6850.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="record-input">
+        <h2>Halloween-katalogen</h2>
+        <div class="entry-form">
+          <form>
+            <label for="name">Namn</label>
+            <input type="text" id="name" />
+
+            <label for="contact-num">Telefonnummer</label>
+            <input type="text" id="contact-num" />
+          </form>
+          <!-- Ett alert meddelande till användaren -->
+          <span class="message"></span>
+
+          <div class="input-btns">
+            <button type="submit" id="submit-btn">
+              <span>
+                <i class="fas fa-plus"></i>
+              </span>
+              Lägg till ny kontakt
+            </button>
+
+            <button type="button" id="cancel-btn">Ta bort skriven text</button>
+          </div>
+        </div>
+      </div>
+      <div class="record-display">
+        <h2>Tillgängliga kontakter:</h2>
+
+        <button type="button" id="reset-btn">Ta bort allt</button>
+        <div class="record-container"></div>
+      </div>
+    </div>
+
+    <script src="Telefonkatallog.js"></script>
+  </body>
+</html>
